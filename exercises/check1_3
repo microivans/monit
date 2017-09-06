@@ -1,0 +1,4 @@
+check program 169.44.180.120_2393 
+	with path "/etc/monit/script/test_port.py 169.44.180.120 2393" 
+		if status == 1 then exec "/etc/monit/script/slack.sh" 
+		else if succeeded then exec "/etc/monit/script/slack.sh"

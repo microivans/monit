@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import socket
+import sys
+
+def test_port(ip_address, port):
+#    socket.setdefaulttimeout(5)
+    s = socket.socket()
+    try:
+        s.connect((ip_address, port))
+    except ConnectionRefusedError:
+        sys.exit(1) 
+    else:
+        s.close()
+        sys.exit(0)
+
+ip_address = "169.44.180.120"
+
+port = 2393
+
+test_port(ip_address, port)

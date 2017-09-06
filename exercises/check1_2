@@ -1,0 +1,5 @@
+check host straker.com_Straker with address www.strakertranslations.com
+	if failed 
+		url https://www.strakertranslations.com/ and content == "Straker"
+		timeout 10 seconds for 1 cycles
+	then alert

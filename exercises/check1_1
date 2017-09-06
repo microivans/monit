@@ -1,0 +1,5 @@
+check host straker.com_Googggllyy with address www.strakertranslations.com
+	if failed 
+		url https://www.strakertranslations.com/ and content == "Googggllyy"
+		timeout 10 seconds for 1 cycles
+	then exec "/etc/monit/script/slack.sh" repeat every 3 cycles

@@ -1,0 +1,12 @@
+
+This README text describes the purpose of each check program.
+
+check - check the reachability of https://www.strakertranslations.com/
+
+check1_1 - look for the word 'Googggllyy' in the page of https://www.strakertranslations.com/
+
+check1_2 - look for the word 'Straker' in the page of https://www.strakertranslations.com/
+
+check1_3 - check the reachability of port 2393 on 169.44.180.120
+
+check1_3_1 - check the reachability of port 2812 on localhost
